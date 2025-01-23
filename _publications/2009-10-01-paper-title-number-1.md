@@ -2,7 +2,7 @@
 title: "Accounting Conservatism and the Profitability of Corporate Insiders"
 collection: publications
 category: manuscripts
-permalink: https://onlinelibrary.wiley.com/doi/full/10.1111/jbfa.12438#:~:text=We%20predict%20that%20accounting%20conservatism%20influences%20insiders%27%20opportunities,associated%20with%20lower%20%28higher%29%20insiders%27%20profitability%20from%20sales.
+#permalink: #https://onlinelibrary.wiley.com/doi/full/10.1111/jbfa.12438#:~:text=We%20predict%20that%20accounting%20conservatism%20influences%20insiders%27%20opportunities,associated%20with%20lower%20%28higher%29%20insiders%27%20profitability%20from%20sales.
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 date: 2020-21-01
 venue: 'Journal of Business Finance and Accounting'
