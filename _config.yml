@@ -1,5 +1,3 @@
-# Welcome to Jekyll!
-#
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
@@ -24,7 +22,7 @@ author:
   avatar           : "profile.png"
   name             : "Akram Khalilov"
   pronouns         : # example: "she/her"  
-  bio              : "Assistant Professor\nApplied Economist"
+  bio              : "Assistant Professor \n Applied Economist"
   location         : "Oslo, Norway"
   employer         : "BI Norwegian Business School"
   uri              : # URL
