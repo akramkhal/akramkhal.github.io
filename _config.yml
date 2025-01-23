@@ -25,8 +25,8 @@ author:
   name             : "Akram Khalilov"
   pronouns         : # example: "she/her"  
   bio              : 
-  - "Assistant Professor"
-  - "Applied Economist"
+    - "Assistant Professor"   
+    - "Applied Economist"
   location         : "Oslo, Norway"
   employer         : "BI Norwegian Business School"
   uri              : # URL
