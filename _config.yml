@@ -24,7 +24,8 @@ author:
   avatar           : "profile.png"
   name             : "Akram Khalilov"
   pronouns         : # example: "she/her"  
-  bio              : "Assistant Professor \n Applied Economist"
+  #bio              #: "Assistant Professor \n Applied Economist"
+  bio              : "Multi-Modal Learning \n under Prof. Marcus Rohrbach"
   location         : "Oslo, Norway"
   employer         : "BI Norwegian Business School"
   uri              : # URL
