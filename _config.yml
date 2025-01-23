@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Akram's Hopepage"
+title                    : "Akram's Homepage"
 title_separator          : "-"
 name                     : &name "Akram Khalilov"
 description              : &description "personal description"
