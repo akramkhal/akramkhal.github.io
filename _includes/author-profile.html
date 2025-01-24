@@ -5,23 +5,25 @@
 {% endif %}
 
 <div itemscope itemtype="http://schema.org/Person">
-  <div class="author__avatar">
+  <div class="author__avatar" style="text-align: center; margin-bottom: 20px;">
     {% if author.avatar contains "://" %}
-      <img src="{{ author.avatar }}" alt="{{ author.name }}" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; display: block; margin: 0 auto;">
+      <img src="{{ author.avatar }}" alt="{{ author.name }}" 
+           style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%; display: inline-block;">
     {% else %}
-      <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" alt="{{ author.name }}" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; display: block; margin: 0 auto;">
+      <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" alt="{{ author.name }}" 
+           style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%; display: inline-block;">
     {% endif %}
   </div>
 
-  <div class="author__content">
+  <div class="author__content" style="text-align: center;">
     <h3 class="author__name">{{ author.name }}</h3>
     {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
 
-  <div class="author__urls-wrapper">
+  <div class="author__urls-wrapper" style="text-align: center;">
     <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
+    <ul class="author__urls social-icons" style="list-style: none; padding: 0; display: inline-block; margin-top: 10px;">
       {% if author.location %}
         <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>
       {% endif %}
