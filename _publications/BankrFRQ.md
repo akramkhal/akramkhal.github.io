@@ -4,7 +4,7 @@ collection: publications
 category: working
 permalink: /publication/BankrFRQ
 excerpt: 'with Irina Gazizova, Beatriz Garcia Osma'
-date : #
+date : 2025-01-01
 venue: ''
 ---
 
