@@ -26,6 +26,7 @@
       </div>
     {% endif %}
 
+    <!-- Title rendering -->
     <h2 class="archive__item-title" itemprop="headline">
       {% if post.link %}
         {% if post.collection == 'teaching' %}
@@ -50,14 +51,17 @@
       {% endif %}
     </h2>   
 
+    <!-- Content below the title -->
     {% if post.collection == 'teaching' %}
       <p>{{ post.type }}{% if post.venue %}, <i>{{ post.venue }}</i>{% endif %}</p>
     {% elsif post.collection == 'publications' and post.category != 'working' %}
       <p>Published in <strong>{{ post.venue }}</strong>, <strong>{{ post.date | default: "1900-01-01" | date: "%Y" }}</strong></p>
     {% elsif post.collection == 'publications' and post.category == 'working' %}
-      <p>{{ post.title }}</p>
+      <!-- Prevent duplicate title rendering -->
+      <p>{{ post.type }}</p>
     {% endif %}
 
+    <!-- Excerpt -->
     {% if post.excerpt and site.read_more != 'enabled' %}
       <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
@@ -67,6 +71,7 @@
       </p>
     {% endif %}
 
+    <!-- Citation and downloads -->
     {% if post.citation and post.paperurl and post.slidesurl %}
       <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
     {% elsif post.citation and post.paperurl %}
