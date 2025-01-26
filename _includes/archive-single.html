@@ -56,8 +56,13 @@
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
 
-  {% if post.collection == 'teaching' %}
-  <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+{% if post.collection == 'teaching' %}
+  {% if post.venue %}
+    <p>{{ post.type }}, <i>{{ post.venue }}</i></p>
+  {% else %}
+    <p>{{ post.type }}</p>
+  {% endif %}
+{% endif %}
   {% elsif post.collection == 'publications' and post.category != 'working' %}
     <p>Published in <strong>{{ post.venue }}</strong>, <strong>{{ post.date | default: "1900-01-01" | date: "%Y" }}</strong></p>
   {% elsif post.date and post.category != 'working' %}
