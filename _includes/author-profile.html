@@ -9,10 +9,10 @@
   <div class="author__avatar" style="text-align: left; margin-bottom: 25px;">
   {% if author.avatar contains "://" %}
     <img src="{{ author.avatar }}" alt="{{ author.name }}" 
-         style="max-width: 100%; height: auto; object-fit: cover; display: block; border-radius: 10px;">
+         style="max-width: 80%; height: auto; object-fit: cover; display: block; border-radius: 10px;">
   {% else %}
     <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" alt="{{ author.name }}" 
-         style="max-width: 100%; height: auto; object-fit: cover; display: block; border-radius: 10px;">
+         style="max-width: 80%; height: auto; object-fit: cover; display: block; border-radius: 10px;">
   {% endif %}
 </div>
 
