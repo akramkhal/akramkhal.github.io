@@ -38,12 +38,15 @@
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
 
-{% if post.collection == 'teaching' %}
-  <p>{{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
-{% elsif post.collection == 'publications' and post.category != 'working' %}
-  <p>Published in <strong>{{ post.venue }}</strong>, <strong>{{ post.date | default: "1900-01-01" | date: "%Y" }}</strong></p>
-{% elsif post.date %}
-  {% if post.category != 'working' %}
+  {% if post.collection == 'teaching' %}
+    <p>{{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
+  {% elsif post.collection == 'publications' and post.category != 'working' %}
+    {% if post.venue %}
+      <p>Published in <strong>{{ post.venue }}</strong>, <strong>{{ post.date | default: "1900-01-01" | date: "%Y" }}</strong></p>
+    {% else %}
+      <p>Published <strong>{{ post.date | default: "1900-01-01" | date: "%Y" }}</strong></p>
+    {% endif %}
+  {% elsif post.date and post.category != 'working' %}
     <p class="page__date">
       <strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> 
         {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}
@@ -53,7 +56,6 @@
       </time>
     </p>
   {% endif %}
-{% endif %}
 
     {% if post.excerpt and site.read_more != 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
