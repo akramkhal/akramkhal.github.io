@@ -1,0 +1,26 @@
+---
+title: 'PACs and Lobbying'
+date: 2022-12-31
+#permalink: #/posts/PACs/
+tags:
+  - PACs
+  - Lobbying
+---
+
+This data provide details on PACs and total lobbying expenditures by public firms. The data on PAC contributions and lobbying expenditures is from the Center for Responsive Politics (CRP) data (originally from the Federal Election Commission). [OpenSecrets Bulk Data Downloads](https://www.opensecrets.org/bulk-data/downloads). PAC contributions are derived from detailed committee and candidate summary contribution files for each election cycle. Unlike lobbying expenditures, PAC contributions are reported by election cycle (i.e., every second year rather than each calendar year). Thus, I aggregate them into total dollar amounts within each firm-fiscal year by
+checking the dates when the PAC contributions were reported. Since the CRP does not use company identifiers (i.e., GVKEY), we use a fuzzy matching algorithm (please check FuzzyWuzzy library in Python) to match each firm name in the CRP data with the Compustat-CRSP merged database by applying a cutoff of more than 90% similarity in the respective company's name. Note, I cannot guarantee that the final sample is entirely free of errors.
+
+If you are interested in the data and have legal access to WRDS, please feel free to send me an email.
+
+Please cite this article if you are going to use the data:
+
+Khalilov, Akram, and Tobias Witter. "Bridging the Gap: A Study of Government Suppliers' Reporting Practices." Available at SSRN 4474360 (2023).
+
+Headings are cool
+======
+
+You can have many headings
+======
+
+Aren't headings cool?
+------
