@@ -1,7 +1,7 @@
 ---
 title: 'PACs and Lobbying'
 date: 2022-12-31
-#permalink: #/posts/PACs/
+permalink: /posts/PACs/
 tags:
   - PACs
   - Lobbying
