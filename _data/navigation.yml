@@ -22,7 +22,7 @@ main:
   #  url: /portfolio/
         
   - title: "Data and Code"
-    url: /year-archive/
+    url: /posts/
     
    #- title: "Data and Code"
    #  url: /datacode/
