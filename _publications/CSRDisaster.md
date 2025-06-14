@@ -1,11 +1,12 @@
 ---
 title: "Demand-driven Corporate Social Responsibility: Symbolic versus Substantive Change after Environmental Disasters"
 collection: publications
-category: working
+category: manuscripts
 permalink: /publication/CSRDisaster
 excerpt: 'with Juan Manuel Garcia-Lara, Beatriz Garcia Osma and Irina Gazizova'
 date: 2025-01-01
 venue: ''
+venue: 'Journal of Corporate Finance (forthcoming)'
 paperurl: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3898817'
 ---
 
