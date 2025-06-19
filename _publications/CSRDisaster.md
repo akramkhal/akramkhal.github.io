@@ -4,9 +4,9 @@ collection: publications
 category: manuscripts
 permalink: /publication/CSRDisaster
 excerpt: 'with Juan Manuel Garcia-Lara, Beatriz Garcia Osma and Irina Gazizova'
-date: 2025-01-01
+date: 2025-06-18
 venue: ''
-venue: 'Journal of Corporate Finance (forthcoming)'
+venue: 'Journal of Corporate Finance'
 slidesurl: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3898817' 
 paperurl: 'https://doi.org/10.1016/j.jcorpfin.2025.102816'
 ---
