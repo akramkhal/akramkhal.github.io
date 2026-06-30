@@ -7,11 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-I am an Assistant Professor of Accounting at BI Norwegian Business School.
+I am an Associate Professor of Accounting at BI Norwegian Business School.
 
-My research interests lie in earnings attributes, political economy of accounting and corporate finance. I received my Ph.D. in Business and Finance from [Universidad Carlos III de Madrid](https://business.uc3m.es/en/index) (Spain).
+My research focuses on earnings attributes, the political economy of accounting, and corporate finance. I received my Ph.D. in Business and Finance from [Universidad Carlos III de Madrid](https://business.uc3m.es/en/index) (Spain).
 
-I am deeply interested in empirical research, utilizing cutting-edge data science techniques.
+My work is primarily empirical, with a strong emphasis on applying modern data science and econometric methods to address research questions in accounting and finance.
 
 ---
 
